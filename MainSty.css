@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img5.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.heading {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px; /* Change this to the desired height */
+    padding: 0 20px; /* Change this to the desired padding */
+  }
+  
+  .heading li {
+    list-style: none;
+    font-size: small;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .heading a {
+    color: #fff; /* Change this to the desired text color */
+    text-decoration: none;
+    padding: 5px; /* Change this to the desired padding */
+    border-radius: 5px; /* Change this to the desired border radius */
+
+  }
+  
+  .heading a:hover {
+    color: #a5082a; /* Change this to the desired hover background color */
+  }
+.text-container {
+    width: auto;
+    padding: 40px;
+    font-display:inherit;
+    border-radius: 7px;
+    background-color: rgb(255, 255, 255); /* Adds a semi-transparent white background to the text container */
+}
+
+.text-container h1,
+.text-container p {
+    color: #101010;
+    border-radius: 10px;
+    justify-content: center;
+    
+}
+
+.image-container {
+    flex: 1;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-container {
+    padding: 20px;
+    background-color: rgba(244, 243, 243, 0.5);
+    border-radius: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    animation-iteration-count: inherit;
+  }
+  
+  .text-container h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+@keyframes blink {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
+.btn a{
+    height: auto;
+    width: auto;
+    background-color: #a5082a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn a:hover{
+  background-color: #b54b62;
+}
